@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BWStest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BWStest/BWStest_{{ version }}.tar.gz
-  sha256: faff1dd698f1673a6befacb94d14281077d4c19be035a0a3bf85d77c1dfd5509
+  sha256: 4bc4cc27fcf0aa60c6497048b74528923aae852c98480900204835a8ebd714b2
 
 build:
-  merge_build_host: True  # [win]
-  number: 1005
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,9 +48,7 @@ test:
 about:
   home: https://github.com/shabbychef/BWStest
   license: LGPL-3.0-only
-  summary: Performs the 'Baumgartner-Weiss-Schindler' two-sample test of equal probability distributions,
-    <doi:10.2307/2533862>. Also performs similar rank-based tests for equal probability
-    distributions due to Neuhauser <doi:10.1080/10485250108832874> and Murakami <doi:10.1080/00949655.2010.551516>.
+  summary: Performs the 'Baumgartner-Weiss-Schindler' two-sample test of equal probability distributions, <doi:10.2307/2533862>. Also performs similar rank-based tests for equal probability distributions due to Neuhauser <doi:10.1080/10485250108832874> and Murakami <doi:10.1080/00949655.2010.551516>.
   license_family: LGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
