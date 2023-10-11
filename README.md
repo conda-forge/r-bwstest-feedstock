@@ -3,6 +3,7 @@ About r-bwstest-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bwstest-feedstock/blob/main/LICENSE.txt)
 
+
 About r-bwstest
 ---------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/shabbychef/BWStest
 Package license: LGPL-3.0-only
 
 Summary: Performs the 'Baumgartner-Weiss-Schindler' two-sample test of equal probability distributions, <doi:10.2307/2533862>. Also performs similar rank-based tests for equal probability distributions due to Neuhauser <doi:10.1080/10485250108832874> and Murakami <doi:10.1080/00949655.2010.551516>.
+
 About r-bwstest
 ---------------
 
